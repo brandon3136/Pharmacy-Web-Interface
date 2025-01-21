@@ -18,7 +18,7 @@ import AboutUs from './Components/AboutUs';
 const App = () => {
   let heroData = [
     { text1: "Your Trusted Online Pharmacy", text2: "Quality Medicines Delivered to Your Doorstep" },
-    { text1: "Expert Care, Exceptional Service", text2: "Your Health is Our Priority" },
+    { text1: "Expert Care, Exceptional Service From Us", text2: "Your Health is Our Priority" },
     { text1: "Caring for You and Your Family", text2: "Shop Medicines, Vitamins, and More Anytime, Anywhere!" },
     { text1: "Health Made Simple", text2: "Explore Our Wide Range of Affordable Medicines" },
   ];
