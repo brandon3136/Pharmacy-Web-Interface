@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.headContainer{
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2a5298;
+}
+.headerContainer{
+  display: flex;
+  width: 50%;
+  color: white;
+  justify-content: center;
+}
+
+.headerContainer img{
+  width: 50px;
+  margin: 0 1rem;
+}
+.navigationContainer{
+  display: flex;
+  flex: 1 1 40rem;
+  align-items: center;
+ 
+}
+
+.navContainer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.navContainer{
+  width: 100%;
+}
+
+.navContainer ul a{
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  transition: background 0.3s ease-in;
+  border-radius: 0.8rem;
+}
+
+.navContainer ul a:hover{
+  border: 1px;
+  background-color: white;
+  color: #2a5298;
+  
+}
+
+
+.heroContainer {
+  position: relative; 
+  width: 100%;
+  height: 500px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden; 
+  top: 0;
+  left: 0;
+}
+
+
+.bgContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+
+.heroDotPlay {
+  position: absolute;
+  bottom: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.heroDots {
+  list-style-type: none;
+  display: flex;
+  gap: 15px; 
+  padding: 0;
+  margin: 0;
+}
+
+
+.heroDot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background-color: lightgray;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.heroDot.orange {
+  background-color: #2a5298;
+  transform: scale(1.2); 
+}
+
+
+.heroDot:hover {
+  background-color: gray;
+}
+
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.productCard {
+  border: 1px solid #2a5298;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+}
+
+.productImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.productName {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.productPrice {
+  color: #2a5298;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.footer-container {
+  background-color: #2a5298;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-content p a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-links img{
+
+  height: 20px;
+}
+
+
+.aboutUsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.aboutUsContent {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.aboutUsContent h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #2a5298;
+}
+
+.aboutUsContent h2 {
+  color: #2a5298;
+  margin-top: 20px;
+}
+
+.aboutUsContent p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.aboutUsContent ul {
+  margin-left: 20px;
+  color: #555;
+  list-style-type: disc;
+}
+
+.aboutUsContent strong {
+  color: #2a5298;
+}
+
