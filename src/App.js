@@ -79,7 +79,7 @@ const App = () => {
                   heroData={heroData[heroCount]}
                 />
               ) : (
-                <div>Loading homepage content...</div>
+                <div>Loading homepage content from the server...</div>
               )
             }
           />
