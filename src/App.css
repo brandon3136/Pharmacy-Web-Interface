@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .headContainer{
@@ -127,7 +127,7 @@
 }
 
 
-.heroDot.orange {
+.heroDot.selected {
   background-color: #2a5298;
   transform: scale(1.2); 
 }
@@ -141,42 +141,77 @@
 .productsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  gap: 16px; 
+  justify-content: center;
   padding: 20px;
 }
 
 .productCard {
+  width: 200px;
   border: 1px solid #2a5298;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  padding: 16px;
+  background-color: #fff;
+  position: relative; 
+  
+  
 }
 
-.productCard:hover {
-  transform: translateY(-10px);
+.productCard:hover{
+  transform: scale(1.05);
+
 }
 
 .productImage {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .productName {
   font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 0 5px;
+  color: #333;
 }
 
 .productPrice {
-  color: #2a5298;
   font-size: 16px;
-  font-weight: bold;
+  color: #2a5298;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.likeContainer {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  bottom: 5px; 
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.likeContainer p{
+  margin-top: 10px;
+  margin-left: 5px;
+  color: rgb(0, 224, 0);
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.likeIcon:hover {
+  transform: scale(1.2); 
+
 }
 
 
